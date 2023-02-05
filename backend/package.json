@@ -15,7 +15,8 @@
   "type": "module",
   "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
-    "dev": "cross-env NODE_ENV=development nodemon index.js"
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "build:ui": "rm -rf build && cd ../frontend  && yarn run build && cp -r ./build ../backend"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.19.4",
