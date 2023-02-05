@@ -16,7 +16,11 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "build:ui": "rm -rf build && cd ../frontend  && yarn run build && cp -r ./build ../backend"
+    "build:ui": "rm -rf build && cd ../frontend  && yarn run build && cp -r ./build ../backend",
+    "deploy": "git push heroku HEAD:master",
+    "deploy:full": "yarn run build:ui && git add . && git commit -m uibuild && yarn run deploy",
+    "logs:prod": "heroku logs --tail",
+    "complete": "yarn deploy:full && yarn logs:prod"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.19.4",
