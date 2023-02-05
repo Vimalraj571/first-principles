@@ -8,7 +8,9 @@ import config from './utils/config.js'
 
 const url = config.URL.replace(/password/i, config.PASS)
 
-console.log(url)
+// console.log(url)
+
+mongoose.set('strictQuery', false);
 
 mongoose
   .connect(url)

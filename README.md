@@ -9,7 +9,6 @@ Functionality
     c. Edit Testimonial (PUT)
     d. Delete Testimonia (Update Active = 0) (DELETE) (ACTUALLY Updating Status)
 
-
 *__For More Information Check the Postman Collection__*
 
 Steps:
@@ -32,8 +31,29 @@ yarn install
 touch .env
 ```
 
+Sample `.env` file
+
+```
+MONGODB_URI=YOUR_MONGO_SERVER
+MONGODB_PASS=YOUR_PASS
+PORT=PORT_FOR_EXPRESS_SERVER
+SECRET=YOUR_ANY_SECRET_KEY
+```
+
 - Run server
 
 ```
 node index.js
 ```
+
+Just UI Build Using Netifly : <https://snazzy-dusk-dd9d84.netlify.app/>
+
+Note:
+
+- The version Netifly won't have the Testimonals There is no backend is running for that. So its just UI with out Testimonial
+- For Heroku I have added scripts PS: I don't have Heroku Credits for Running.
+- If the both `frontend` and `backend` `running in local` with external `mongo server` we can add,update,delete testimonials
+
+Also Attached Video Demo
+
+- 
