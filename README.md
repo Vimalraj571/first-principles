@@ -50,10 +50,10 @@ Just UI Build Using Netifly : <https://snazzy-dusk-dd9d84.netlify.app/>
 
 Note:
 
-- The version Netifly won't have the Testimonals There is no backend is running for that. So its just UI with out Testimonial
+- The version Netifly `won't have the Testimonals` There is `no backend is running for that`. So its just UI with out Testimonial
 - For Heroku I have added scripts PS: I don't have Heroku Credits for Running.
 - If the both `frontend` and `backend` `running in local` with external `mongo server` we can add,update,delete testimonials
 
 Also Attached Video Demo
 
-- 
+https://user-images.githubusercontent.com/8166149/216829026-6fafbb18-6876-4218-bc2d-ff2471b10091.mp4
