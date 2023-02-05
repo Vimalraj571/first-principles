@@ -4,7 +4,11 @@ Simple Testimonial App written in Node and Mongo
 
 Functionality
 
-    1. Testimonial (REST Operations)
+    a. Add Testimonial (POST)
+    b. View Testimonial(s) (GET ALL)
+    c. Edit Testimonial (PUT)
+    d. Delete Testimonia (Update Active = 0) (DELETE) (ACTUALLY Updating Status)
+
 
 *__For More Information Check the Postman Collection__*
 
