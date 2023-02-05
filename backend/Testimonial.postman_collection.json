@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Testimonial",
+		"_postman_id": "2346dc9c-202b-8fde-1d0b-ca132473870f",
+		"description": "REST endpoints for the Testimonials",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3003/api/testimonial",
+			"request": {
+				"url": "http://localhost:3003/api/testimonial",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get all Testimonials"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/api/testimonial",
+			"request": {
+				"url": "http://localhost:3003/api/testimonial",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n  \"name\": \"test\",\r\n  \"designation\": \"test\",\r\n  \"description\": \"test\",\r\n  \"photo\":\"https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp\"\r\n  }"
+				},
+				"description": "Create New Testimonials"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/api/testimonial/63dfa5fd98ecf1880d652e1e",
+			"request": {
+				"url": "http://localhost:3003/api/testimonial/63dfa5fd98ecf1880d652e1e",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Get A Single Testimonial"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/api/testimonial/63dfa5fd98ecf1880d652e1e",
+			"request": {
+				"url": "http://localhost:3003/api/testimonial/63dfa5fd98ecf1880d652e1e",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "Delete Update the Active status to the testimonial"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3003/api/testimonial/63dfa5fd98ecf1880d652e1e",
+			"request": {
+				"url": "http://localhost:3003/api/testimonial/63dfa5fd98ecf1880d652e1e",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"photo\": \"ppppppppppppppp\",\n    \"name\": \"this is name\",\n    \"designation\": \"dessg\",\n    \"description\": \"descript\"\n}"
+				},
+				"description": "Update the Testimonial"
+			},
+			"response": []
+		}
+	]
+}
