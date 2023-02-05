@@ -7,7 +7,7 @@ const testimonialSchema = new mongoose.Schema({
     required: true,
     immutable: true
   },
-  post: string,
+  designation: String,
   description: String,
   createOn: Date,
   lastUpdate: Date,
